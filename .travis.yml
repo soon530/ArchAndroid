@@ -4,6 +4,14 @@ branchs:
 
 language: android
 
+before_cache:
+  - rm -f $HOME/.gradle/caches/modules-2/modules-2.lock
+
+cache:
+  directories:
+    - $HOME/.gradle
+    - $HOME/.m2/repository
+
 android:
     components:
         - build-tools-23.0.0
@@ -16,11 +24,6 @@ android:
         - sys-img-armeabi-v7a-android-21
         - sys-img-armeabi-v7a-android-22
         # - sys-img-x86-android-17
-
-cache:
-  directories:
-    - $HOME/.gradle
-    - $HOME/.m2/repository
 
 env:
   global:
