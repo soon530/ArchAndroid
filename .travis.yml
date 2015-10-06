@@ -8,6 +8,7 @@ android:
     components:
         - build-tools-23.0.0
         - android-22
+        - extra-android-support
 
 cache:
   directories:
