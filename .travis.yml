@@ -1,0 +1,15 @@
+branchs:
+    only:
+        - master
+
+language: android
+
+android:
+    components:
+        - build-tools-23.0.0
+        - android-22
+
+cache:
+  directories:
+    - $HOME/.gradle
+    - $HOME/.m2/repository
