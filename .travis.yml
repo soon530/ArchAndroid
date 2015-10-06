@@ -10,11 +10,13 @@ before_cache:
 
 cache:
   directories:
+    - node_modules
     - $HOME/.gradle
     - $HOME/.m2/repository
 
 android:
     components:
+        - "150"
         - build-tools-22.0.1
         - android-22
         - extra-android-support
